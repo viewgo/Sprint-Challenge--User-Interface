@@ -71,7 +71,53 @@ p {
     margin: 0 auto;
 }
 
-.top-content {
+header {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    align-items: flex-end;
+}
+
+header nav {    
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 35px; */
+}
+
+header nav a {
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+    
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:first-child {
+    margin-left: 0;
+}
+
+header nav a:last-child {
+    margin-right: 75px;
+}
+
+.top-content{    
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.banner{
+    margin-bottom: 25px;
+}
+
+.top-txt-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -79,7 +125,7 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
+.top-txt-img .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
